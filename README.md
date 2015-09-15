@@ -12,6 +12,8 @@ Simple starter example that gets you going with Angular 2 in minutes.
 
 ## Getting Started
 
+1. Clone this repo
+
 1. Run `npm install`
 
 1. Run the TypeScript compiler and watch for changes `npm run tsc`
