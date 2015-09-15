@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "tsc": "tsc -p src -w",
-    "start": "live-server --open=src"
+    "start": "live-server"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.37",
