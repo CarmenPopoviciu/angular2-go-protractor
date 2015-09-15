@@ -12,7 +12,7 @@ import {Character} from './character';
         <span class="badge">{{character.id}}</span> {{character.name}}</a>
       </li>
     </ul>
-    <h2*ng-if="currentCharacter">
+    <h2 *ng-if="currentCharacter">
       {{currentCharacter.name | uppercase}} is my character
     </h2>
   `,
