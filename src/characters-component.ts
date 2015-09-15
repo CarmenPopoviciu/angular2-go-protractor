@@ -5,16 +5,16 @@ import {Character} from './character';
 
 @Component({ selector: 'my-characters' })
 @View({
-    template: `
-      <h2>Characters</h2>
-      <ul class="characters">
-        <li *ng-for="#character of characters" (click)="onSelect(character)">
-          <span class="badge">{{character.id}}</span> {{character.name}}</a>
-        </li>
-      </ul>
-      <div *ng-if="currentCharacter">
-        <h2>{{currentCharacter.name | uppercase}} is my character</h2>
-      </div>
+  template: `
+    <h2>Characters</h2>
+    <ul class="characters">
+      <li *ng-for="#character of characters" (click)="onSelect(character)">
+        <span class="badge">{{character.id}}</span> {{character.name}}</a>
+      </li>
+    </ul>
+    <h2*ng-if="currentCharacter">
+      {{currentCharacter.name | uppercase}} is my character
+    </h2>
   `,
   directives: [NgFor, NgIf],
   styles: [`
@@ -33,7 +33,7 @@ export class CharactersComponent {
     if (this._characters) { return this._characters; }
 
     this._characterService.getCharacters()
-      .then(characters => this._characters = characters );
+      .then(characters => this._characters = characters);
 
     return this._characters;
   }
