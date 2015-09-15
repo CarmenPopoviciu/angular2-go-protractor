@@ -22,4 +22,4 @@ Simple starter example that gets you going with Angular 2 in minutes.
 
 ## Notes
 
-This sample intentionally uses precise versions of Angular 2 and SystemJS so new versions do not break it. I will update these as Angular moves out of Alpha.
+This sample intentionally uses precise versions of Angular 2 and SystemJS so new versions do not break it. I will update these as Angular 2 moves out of Alpha.
