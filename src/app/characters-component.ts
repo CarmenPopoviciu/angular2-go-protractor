@@ -6,14 +6,14 @@ import {Character} from './character';
 @Component({ selector: 'my-characters' })
 @View({
     template: `
-      <h2>My Characters</h2>
+      <h2>Characters</h2>
       <ul class="characters">
         <li *ng-for="#character of characters" (click)="onSelect(character)">
           <span class="badge">{{character.id}}</span> {{character.name}}</a>
         </li>
       </ul>
       <div *ng-if="currentCharacter">
-        <h2>{{currentCharacter.name | uppercase}} is my Character</h2>
+        <h2>{{currentCharacter.name | uppercase}} is my character</h2>
       </div>
   `,
   directives: [NgFor, NgIf],

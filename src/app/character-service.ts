@@ -5,7 +5,7 @@ export class CharacterService {
 
 	getCharacter(id: number) {
 		return Promise.resolve(CHARACTERS)
-			.then((characters: Character[]) => { return characters.filter((c) => {
+			.then((characters) => { return characters.filter((c) => {
 				return c.id === id;
 			})[0]});
 	}
