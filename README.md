@@ -17,5 +17,3 @@ Simple starter example that gets you going with Angular 2 in minutes.
 1. Run the TypeScript compiler and watch for changes `npm run tsc`
 
 1. Open 2nd terminal and launch the app in the browser `npm start`
-
-## Notes
