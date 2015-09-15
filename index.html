@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/"></base>
+  <link rel="stylesheet" href="styles.css">
+  <script src="node_modules/traceur/bin/traceur-runtime.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="node_modules/angular2/bundles/router.dev.js"></script>
+</head>
+
+<body>
+  <my-app>Loading...</my-app>
+  <script>
+    System.config({
+      packages: {'src': {defaultExtension: 'js'}}
+    });
+    System.import('src/bootstrap').catch(console.log.bind(console));
+  </script>
+</body>
+
+</html>
