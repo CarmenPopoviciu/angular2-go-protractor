@@ -1,5 +1,7 @@
 #Angular 2 Go !
 
+[![Join the chat at https://gitter.im/johnpapa/angular2-go](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/johnpapa/angular2-go?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Simple starter example that gets you going with Angular 2 in minutes.
 
 Note: Non NPM instructions are [here](#Alternative-Non-NPM-Steps)
