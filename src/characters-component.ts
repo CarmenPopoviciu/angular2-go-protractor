@@ -29,16 +29,18 @@ export class CharactersComponent {
 
   constructor(private _characterService: CharacterService) { }
 
-  getCharacters() {
-    this._characterService.getCharacters()
-      .then(characters => this._characters = characters);
-
-    return this._characters;
-  }
-
   get characters() {
     return this._characters || this.getCharacters()
   }
 
   onSelect(character: Character) { this.currentCharacter = character; }
+
+  /////////////////
+
+  private getCharacters() {
+    this._characterService.getCharacters()
+      .then(characters => this._characters = characters);
+
+    return this._characters;
+  }
 }
