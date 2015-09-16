@@ -2,12 +2,16 @@
   "name": "angular2-go",
   "version": "0.0.1",
   "scripts": {
-    "tsc": "tsc -p src -w",
-    "start": "live-server"
+    "tsc": "./node_modules/.bin/tsc -p src -w",
+    "start": "./node_modules/.bin/live-server"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.37",
     "systemjs": "0.18.17",
     "traceur": "0.0.91"
+  },
+  "devDependencies": {
+    "live-server": "^0.8.1",
+    "typescript": "^1.5.3"
   }
 }
