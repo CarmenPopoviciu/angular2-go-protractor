@@ -22,6 +22,11 @@ Note: Non NPM instructions are [here](#Alternative-Non-NPM-Steps)
 
 1. Open 2nd terminal and launch the app in the browser `npm start`
 
+## Running Node and NPM
+
+- [on Windows](http://www.johnpapa.net/tips-for-running-node-and-npm-on-windows/)
+- [on OSX](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/)
+
 ##Notes
 
 This sample intentionally uses precise versions of Angular 2 and SystemJS so new versions do not break it. I will update these as Angular 2 moves out of Alpha.
