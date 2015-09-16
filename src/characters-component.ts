@@ -37,10 +37,12 @@ export class CharactersComponent {
 
   /////////////////
 
-  private getCharacters() : Character[] {
+  private getCharacters() {
+    this._characters = [];
+
     this._characterService.getCharacters()
       .then(characters => this._characters = characters);
 
-    return this._characters = [];
+    return this._characters;
   }
 }
