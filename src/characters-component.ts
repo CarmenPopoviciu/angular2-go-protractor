@@ -27,15 +27,17 @@ export class CharactersComponent {
   private _characters: Character[];
   public currentCharacter: Character;
 
-  constructor(private _characterService: CharacterService, private _router: Router) { }
+  constructor(private _characterService: CharacterService) { }
 
-  get characters() {
-    if (this._characters) { return this._characters; }
-
+  getCharacters() {
     this._characterService.getCharacters()
       .then(characters => this._characters = characters);
 
     return this._characters;
+  }
+
+  get characters() {
+    return this._characters || this.getCharacters()
   }
 
   onSelect(character: Character) { this.currentCharacter = character; }
