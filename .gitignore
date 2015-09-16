@@ -1,7 +1,5 @@
 .vscode
-# we use node_modules here to make it easier to just run with it.
-# this is not ideal for a real app.
-#node_modules
+node_modules
 
 src/**/*.js
 src/**/*.map
