@@ -16,6 +16,6 @@ export class DashboardComponent {
 	message = '';
 
 	sayHello() {
-		this.message = `Hello ${this.name}!`;
+		this.message = 'Hello ' + this.name + '!';
 	}
 }
