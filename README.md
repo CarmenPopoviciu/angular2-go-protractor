@@ -4,8 +4,6 @@
 
 Simple starter example that gets you going with Angular 2 in minutes.
 
-Note: Non NPM instructions are [here](#Alternative-Non-NPM-Steps)
-
 ##Pre-Requisites
 
 1. Must install pre-requisites
