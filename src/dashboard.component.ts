@@ -12,8 +12,8 @@ import {Component, FORM_DIRECTIVES, View} from 'angular2/angular2';
 	directives: [FORM_DIRECTIVES]
 })
 export class DashboardComponent {
-	name = 'john';
-	message = '';
+	public name = 'john';
+	public message = '';
 
 	sayHello() {
 		this.message = 'Hello ' + this.name + '!';
