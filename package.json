@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "scripts": {
     "postinstall": "npm run tsd",
-    "tsd": "tsd link --config src/tsd.json && tsd reinstall -r -o --config src/tsd.json",
+    "tsd": "tsd link --config src/tsd.json",
     "tsc": "tsc -p src -w",
-    "start": "live-server"
+    "start": "live-server --open=src"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.37",
-    "systemjs": "0.19.0",
+    "systemjs": "0.19.2",
     "traceur": "0.0.91"
   }
 }
