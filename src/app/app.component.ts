@@ -6,14 +6,14 @@ import {DashboardComponent} from './dashboard.component';
 @Component({ selector: 'my-app' })
 @View({
   template: `
-    <a [router-link]="['./dashboard']">Dashboard</a>
-    <a [router-link]="['./characters']">Characters</a>
+    <a [router-link]="['./Dashboard']">Dashboard</a>
+    <a [router-link]="['./Characters']">Characters</a>
     <router-outlet></router-outlet>
     `,
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-  { path: '/', as: 'dashboard', component: DashboardComponent },
-  { path: '/characters', as: 'characters', component: CharactersComponent }
+  { path: '/', as: 'Dashboard', component: DashboardComponent },
+  { path: '/characters', as: 'Characters', component: CharactersComponent }
 ])
 export class AppComponent { }
