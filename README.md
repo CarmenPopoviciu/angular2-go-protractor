@@ -4,14 +4,6 @@
 
 Simple starter example that gets you going with Angular 2 in minutes.
 
-##Pre-Requisites
-
-1. Must install pre-requisites
-
-	```bash
-	npm install typescript live-server tsd@0.6.5-beta.2 -g
-	```
-
 ##Getting Started
 
 1. Clone this repo
