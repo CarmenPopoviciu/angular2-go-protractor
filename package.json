@@ -1,9 +1,13 @@
 {
   "name": "angular2-go",
   "version": "0.0.1",
+  "repository": "https://github.com/johnpapa/angular2-go",
   "scripts": {
     "tsc": "tsc -p src -w",
     "start": "live-server --open=src"
+  },
+  "engines": {
+    "npm": ">=2.14.x"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.45",
