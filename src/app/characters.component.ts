@@ -1,10 +1,10 @@
-import {Component, NgFor, NgIf, View} from 'angular2/angular2';
+import {Component, NgFor, NgIf} from 'angular2/angular2';
 import {Router} from 'angular2/router';
 import {CharacterService} from './character.service';
 import {Character} from './character';
 
-@Component({ selector: 'my-characters' })
-@View({
+@Component({
+  selector: 'my-characters',
   template: `
     <h2>Select a Character</h2>
     <ul class="characters">

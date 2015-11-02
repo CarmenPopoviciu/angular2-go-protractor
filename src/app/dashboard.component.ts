@@ -1,7 +1,7 @@
-import {Component, FORM_DIRECTIVES, View} from 'angular2/angular2';
+import {Component, FORM_DIRECTIVES} from 'angular2/angular2';
 
-@Component({ selector: 'my-dashboard' })
-@View({
+@Component({
+  selector: 'my-dashboard',
 	template: `
 		<h2>Dashboard</h2>
 		<div>Hello {{name}}</div>
