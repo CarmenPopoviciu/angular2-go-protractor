@@ -1,23 +1,30 @@
-#Angular 2 Go !
+#Angular 2 Go with Protractor !
 
-[![Join the chat at https://gitter.im/johnpapa/angular2-go](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/johnpapa/angular2-go?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Simple starter example that gets you going with Angular 2 and Protractor in minutes, based on the
+[angular2-go seed](https://github.com/johnpapa/angular2-go) by John Papa.
 
-Simple starter example that gets you going with Angular 2 in minutes.
-
-##Getting Started
-
-1. Clone this repo
+## Run the application
 
 1. Run `npm install`
 
-1. Run the TypeScript compiler and watch for changes `npm run tsc`
+1. Run the TypeScript compiler and watch for changes `npm run dev`
 
 1. Open 2nd terminal and launch the app in the browser `npm start`
 
-## Running Node and NPM
+## Run the e2e tests
 
-- [on Windows](http://www.johnpapa.net/tips-for-running-node-and-npm-on-windows/)
-- [on OSX](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/)
+1. First start the application
+
+1. Install the ChromeDriver `node_modules/protractor/bin/webdriver-manager update`
+
+1. Open a third terminal and run the tests `npm run e2e`
+
+The tests are run directly against Chrome, so no need to fire up a Selenium Standalone Server instance. Check
+protractor.conf.js for comments about ng2-specific configuration.
+
+Keep in mind that currently not all locator strategies are supported for ng2 apps. Things like by.model() or by.binding()
+are not working just yet. Check the Protractor [changelog](https://github.com/angular/protractor/blob/master/CHANGELOG.md)
+for new releases
 
 ##Notes
 
