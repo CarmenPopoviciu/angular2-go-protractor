@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
+    <head>
+      <link rel="stylesheet" href="styles.css">
+    </head>
 
-<head>
-  <link rel="stylesheet" href="styles.css">
-  <script src="../../node_modules/systemjs/dist/system.src.js"></script>
-  <script src="../../node_modules/angular2/bundles/angular2.dev.js"></script>
-  <script src="../../node_modules/angular2/bundles/router.dev.js"></script>
-  <script>
-    System.config({
-      packages: {'app': {defaultExtension: 'js'}}
-    });
-    System.import('app/bootstrap');
-  </script>
-</head>
-<body>
-  <my-app>Loading...</my-app>
-</body>
+    <body>
+      <my-app>Loading...</my-app>
+
+      <!-- scripts -->
+      <script src="/node_modules/systemjs/dist/system.src.js"></script>
+      <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+      <script src="/node_modules/angular2/bundles/router.dev.js"></script>
+
+      <script src="system.config.js"></script>
+      <!-- end scripts -->
+
+      <script>
+          System.import('app/bootstrap');
+      </script>
+
+    </body>
 
 </html>

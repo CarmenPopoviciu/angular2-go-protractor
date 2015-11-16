@@ -1,5 +1,6 @@
 import {Component, NgFor, NgIf} from 'angular2/angular2';
 import {Router} from 'angular2/router';
+
 import {CharacterService} from './character.service';
 import {Character} from './character';
 

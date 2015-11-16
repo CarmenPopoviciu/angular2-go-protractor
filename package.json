@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "repository": "https://github.com/johnpapa/angular2-go",
   "scripts": {
-    "tsc": "tsc -p src -w",
-    "start": "live-server --open=src"
+    "copy": "cpy 'src/**/*.html' 'src/**/*.css' dev/src",
+    "tsc": "tsc --outDir dev -w",
+    "dev": "npm run copy && npm run tsc",
+    "start": "live-server --open=dev/src/#/dashboard",
+    "e2e": "protractor protractor.conf.js"
   },
   "engines": {
     "npm": ">=2.14.x"
@@ -14,7 +17,9 @@
     "systemjs": "0.19.5"
   },
   "devDependencies": {
+    "cpy": "^3.4.1",
     "live-server": "^0.8.1",
+    "protractor": "^2.5.1",
     "typescript": "^1.6.2"
   }
 }

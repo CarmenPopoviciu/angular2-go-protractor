@@ -4,7 +4,7 @@ import {Component, FORM_DIRECTIVES} from 'angular2/angular2';
   selector: 'my-dashboard',
 	template: `
 		<h2>Dashboard</h2>
-		<div>Hello {{name}}</div>
+		<div>Yo {{name}}</div>
 		<input [(ng-model)]="name" />
 		<button (click)="sayHello()">Say Hello</button>
 		<p>{{message}}</p>
@@ -12,10 +12,10 @@ import {Component, FORM_DIRECTIVES} from 'angular2/angular2';
 	directives: [FORM_DIRECTIVES]
 })
 export class DashboardComponent {
-	public name = 'john';
+	public name = 'John';
 	public message = '';
 
 	sayHello() {
-		this.message = 'Hello ' + this.name + '!';
+		this.message = 'Yo ' + this.name + '!';
 	}
 }

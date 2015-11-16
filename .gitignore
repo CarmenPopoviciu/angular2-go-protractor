@@ -1,6 +1,15 @@
-typings
-src/**/*.js
-src/**/*.map
+# node & jspm
 node_modules
 jspm_packages
-bower_components
+
+# generated
+dev
+*.log
+
+# type definitions
+typings
+
+# IntelliJ
+.idea
+
+
