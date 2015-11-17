@@ -13,9 +13,7 @@ Simple starter example that gets you going with Angular 2 and Protractor in minu
 
 ## Run the e2e tests
 
-1. First start the application
-
-1. Install the ChromeDriver `node_modules/protractor/bin/webdriver-manager update`
+1. Ensure the application is running (`npm start`)
 
 1. Open a third terminal and run the tests `npm run e2e`
 
