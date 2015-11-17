@@ -7,7 +7,7 @@
     "tsc": "tsc --outDir dev -w",
     "dev": "npm run copy && npm run tsc",
     "start": "live-server --open=dev/src/#/dashboard",
-    "e2e": "protractor protractor.conf.js"
+    "e2e": "./node_modules/protractor/bin/webdriver-manager update && protractor protractor.conf.js"
   },
   "engines": {
     "npm": ">=2.14.x"
