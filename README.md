@@ -3,6 +3,12 @@
 Simple starter example that gets you going with Angular 2 and Protractor in minutes, based on the
 [angular2-go seed](https://github.com/johnpapa/angular2-go) by John Papa.
 
+## Quick note about dependencies
+
+This seed uses a Protractor version >= v3.0.0. Starting with v3.0.0 Protractor no longer supports node versions < v4.2
+(see [changelog](https://github.com/angular/protractor/blob/master/CHANGELOG.md#300)), so make sure you're using a
+compatible node version.
+
 ## Run the application
 
 1. Run `npm install`

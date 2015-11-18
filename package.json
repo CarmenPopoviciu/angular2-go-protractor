@@ -10,7 +10,8 @@
     "e2e": "./node_modules/protractor/bin/webdriver-manager update && protractor protractor.conf.js"
   },
   "engines": {
-    "npm": ">=2.14.x"
+    "npm": ">=2.14.x",
+    "node": ">=4.2.x"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.45",
@@ -19,7 +20,7 @@
   "devDependencies": {
     "cpy": "^3.4.1",
     "live-server": "^0.8.1",
-    "protractor": "^2.5.1",
+    "protractor": "^3.0.0",
     "typescript": "^1.6.2"
   }
 }
